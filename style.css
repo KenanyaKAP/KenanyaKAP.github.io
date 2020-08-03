@@ -1,3 +1,18 @@
+body {
+	margin-top: 58px;
+}
+
 .nav-item {
 	margin-left: 50px;
+}
+
+.home .jumbotron {
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+}
+
+@media (min-width: 992px) { 
+	.home .jumbotron {
+		background-position: 50% -1100px;
+	}
 }
