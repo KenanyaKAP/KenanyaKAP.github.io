@@ -11,33 +11,34 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- My Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+
     <title>Welcome To My First Website!</title>
     <link rel="icon" href="img/logo.png">
   </head>
   <body>
-    
   	<!-- Navbar -->
   	<nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
-  		<div class="container">
-			  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-			  <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30px"> Kelompok ?</a>
+  		<div class="container" style="color: #000000 !important;">
+			  <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="navlogo"> Kelompok ?</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
-			      <li class="nav-item"> <a class="nav-link" href="#">Home</a></li>
-			      <li class="nav-item"> <a class="nav-link" href="#">Daftar Anggota</a></li>
+			      <li class="nav-item"> <a class="nav-link page-scroll" href="#home">Home</a></li>
+			      <li class="nav-item"> <a class="nav-link page-scroll" href="#member">Daftar Anggota</a></li>
 			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Materi</a>
-			        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+			      	<a class="nav-link dropdown-toggle" data-toggle="collapse" href="#collapse1" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Materi</a>
+			        <div class="dropdown-menu collapse bg-dark dd1" aria-labelledby="navbarDropdown" id="collapse1">
 			          <a class="dropdown-item text-white-50 bg-dark" href="#">Materi</a>
-			      	 	<a class="dropdown-item text-white-50 bg-dark" href="#">Buku Tamu</a>
+			          <a class="dropdown-item text-white-50 bg-dark" href="#">Buku Tamu</a>
 			          <a class="dropdown-item text-white-50 bg-dark" href="#">Video Pembuatan</a>
 			          <a class="dropdown-item text-white-50 bg-dark" href="#">Presentasi</a>
 			        </div>
 			      </li>
-			      <li class="nav-item"> <a class="nav-link" href="#">About Us</a></li>
+			      <li class="nav-item"> <a class="nav-link page-scroll" href="#about">About Us</a></li>
 			    </ul>
 			  </div>
 			</div>
@@ -45,13 +46,26 @@
 		
 		<!-- Home -->
 		<section id="home" class="home">
-			<div class="jumbotron jumbotron-fluid">
+			<div class="jumbotron jumbotron-fluid text-light">
 			  <div class="container">
-			    <h1 class="display-4">Fluid jumbotron</h1>
-			    <br><br><br><br><br><br><br>
-			    
+			    <h1 class="display-4">Hai Anjing !</h1><br>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			  </div>
 			</div>
+		</section>
+
+		<!-- Member -->
+		<section id="member" class="member">
+			awd
+		</section>
+
+		<section id="about" class="about bg-secondary">
+			awd
 		</section>
 
     <!-- Optional JavaScript -->
@@ -59,5 +73,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="js/script.js"></script>
   </body>
 </html>

@@ -2,17 +2,58 @@ body {
 	margin-top: 58px;
 }
 
+.navbar {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.navlogo {
+	 height: 50px;
+}
+
 .nav-item {
 	margin-left: 50px;
 }
 
-.home .jumbotron {
-	background-image: url(img/bg.jpg);
-	background-size: cover;
+.dd1 {
+	display: block;
+	padding: 0px;
+	border-style: none;
 }
 
-@media (min-width: 992px) { 
+.home .jumbotron {
+	background-image: url(img/bg1.jpg);
+	background-size: cover;
+	text-shadow:4px 4px 4px black;
+	margin-bottom: 0px;
+}
+
+.home h1 {
+	font-family: 'Teko', sans-serif;
+	letter-spacing: 5px;
+	text-shadow:10px 10px 10px black;
+}
+
+.home p {
+	font-size: 20px;
+}
+
+.member {
+	min-height: 1000px;
+}
+
+.about {
+	min-height: 1000px;
+}
+
+@media (min-width: 992px){
 	.home .jumbotron {
-		background-position: 50% -1100px;
+		padding-bottom: 100px;
+		padding-top: 100px;
+	}
+
+	.dd1 {
+		border-style: solid;
+		box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.175) !important;
 	}
 }
