@@ -1,59 +1,133 @@
+/* Custom CSS Font */
+.kaushan {
+	font-family: 'Kaushan Script', cursive !important;
+}
+.opensans {
+	font-family: 'Open Sans', sans-serif !important;
+}
+.oswald {
+	font-family: 'Oswald', sans-serif !important;
+}
+
+/* Body & HTML */
 body {
-	margin-top: 58px;
+	font-family: 'Open Sans', sans-serif !important;
+}
+html {
+	scroll-behavior: smooth;
 }
 
+/* Navbar */
 .navbar {
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition : background-color .5s, padding-top .5s;
 }
-
-.navlogo {
-	 height: 50px;
+@media (min-width: 992px){
+	.navbar {
+		padding-top: 50px;
+	}
 }
-
+.navbar-brand {
+	color: #69d2e7 !important;
+	font-size: 30px;
+	transition: font-size .5s;
+	text-shadow: 10px 10px 10px black;
+}
+.navbar-nav {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+}
 .nav-item {
-	margin-left: 50px;
+	margin-left: 30px;
+	text-shadow: 10px 10px 10px black;
 }
-
 .dd1 {
 	display: block;
 	padding: 0px;
 	border-style: none;
+	font-size: 14px;
+	background-color: #141414;
+}
+.dd1child {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.dd1child:hover {
+	color: black !important;
 }
 
+/* Home */
 .home .jumbotron {
+	padding-top: 110px;/* 110 */
+	padding-bottom: 110px;
 	background-image: url(img/bg1.jpg);
-	background-size: cover;
-	text-shadow:4px 4px 4px black;
+	background-size: 100% 100%;
+	text-shadow: 4px 4px 4px black;
 	margin-bottom: 0px;
 }
-
-.home h1 {
-	font-family: 'Teko', sans-serif;
-	letter-spacing: 5px;
-	text-shadow:10px 10px 10px black;
-}
-
-.home p {
-	font-size: 20px;
-}
-
-.member {
-	min-height: 1000px;
-}
-
-.about {
-	min-height: 1000px;
-}
-
 @media (min-width: 992px){
 	.home .jumbotron {
-		padding-bottom: 100px;
-		padding-top: 100px;
+		padding-top: 202px;
+		padding-bottom: 122px;
 	}
-
+}
+.home h1 {
+	font-size: 76px;
+	text-align: center;
+	text-shadow: 10px 10px 10px black;
+}
+.home p {
+	font-size: 25px;
+	text-align: center;
+}
+@media (min-width: 992px){
 	.dd1 {
 		border-style: solid;
 		box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.175) !important;
 	}
+}
+
+/* Member */
+#member::before {
+	display: block;
+	content: "";
+	height: 60px;
+	margin-top: -60px;
+	visibility: hidden;
+}
+.member .bg{
+	background-color: coral;
+	min-height: 1000px;
+	text-align: center;
+}
+/* @media (min-width: 768px){
+	.col1 {
+		margin-right: -10%;
+	}
+	.col4 {
+		margin-right: -10%;
+		margin-left: -10%;
+	}
+	.col6 {
+		margin-right: -10%;
+	}
+	.row2 {
+		margin-top: -8.5%;
+		margin-bottom: -8.5%;
+	}
+} */
+
+/* About */
+#about::before {
+	display: block;
+	content: "";
+	height: 60px;
+	margin-top: -60px;
+	visibility: hidden;
+}
+.about .bg{
+	background-color: crimson;
+	min-height: 1000px;
 }
