@@ -154,6 +154,11 @@ html {
 		margin-bottom: -20%;
 	}
 }
+.member .card {
+	position: absolute;
+	margin-left: 50%;
+	z-index: 1;
+}
 
 /* About */
 #about::before {
