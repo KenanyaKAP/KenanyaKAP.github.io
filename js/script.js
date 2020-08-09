@@ -37,9 +37,10 @@ $(document).ready(function() {
 
 	// On Click Event
 	$(document).click(function () {
+
+		// Closing Navbar
 		if ($('.dropdown-toggle').attr("aria-expanded") == 'true'){
 			$($('.dropdown-toggle').attr('href')).collapse('hide');
 		}
-		// alert($('.home h1').css('font-size'));
 	});
 });
