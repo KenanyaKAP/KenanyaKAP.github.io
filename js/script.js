@@ -42,5 +42,7 @@ $(document).ready(function() {
 		if ($('.dropdown-toggle').attr("aria-expanded") == 'true'){
 			$($('.dropdown-toggle').attr('href')).collapse('hide');
 		}
+
+		// alert($('.member h1').css('font-size'));
 	});
 });

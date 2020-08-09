@@ -3,15 +3,15 @@
 	font-family: 'Kaushan Script', cursive !important;
 }
 .opensans {
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: 'Open Sans', sans-serif;
 }
 .oswald {
-	font-family: 'Oswald', sans-serif !important;
+	font-family: 'Oswald', sans-serif;
 }
 
 /* Body & HTML */
 body {
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: 'Open Sans', sans-serif;
 }
 html {
 	scroll-behavior: smooth;
@@ -106,15 +106,15 @@ html {
 	padding-bottom: 50px;
 }
 .member img {
-	max-height: 250px;
-	max-width: 250px;
+	height: 250px;
+	width: 250px;
 }
 .col1, .col2, .col3, .col4, .col5, .col6, .col7 {
 	padding-bottom: 50px;
 }
 @media (min-width: 768px){
 	.col1 {
-		margin-top: -50px;
+		margin-top: 0px;
 		margin-bottom: -200px;
 	}
 	.col2 {
@@ -147,12 +147,12 @@ html {
 @media (min-width: 992px){
 	.col1 {
 		margin-right: -190px;
-		margin-top: -50px;
+		margin-top: -5px;
 		margin-bottom: 0px;
 	}
 	.col2 {
 		margin-right: 0px;
-		margin-top: -50px;
+		margin-top: -5px;
 		margin-bottom: 0px;
 	}
 	.col3 {
@@ -184,12 +184,12 @@ html {
 @media (min-width: 1200px){
 	.col1 {
 		margin-right: -270px;
-		margin-top: -50px;
+		margin-top: -5px;
 		margin-bottom: 0px;
 	}
 	.col2 {
 		margin-right: 0px;
-		margin-top: -50px;
+		margin-top: -5px;
 		margin-bottom: 0px;
 	}
 	.col3 {
@@ -227,17 +227,38 @@ html {
 	z-index: 1;
 }
 .tooltiptext h5 {
-	background-color: #2e2e2e;
+	background-color: #141414;
 	text-align: center;
-	border-radius: 20px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	color: #acacac;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #69d2e7;
+	text-shadow: 1px 1px 10px black;
 	display: inline-block;
-	/* min-width: 300px; */
+	position: relative;
+	top: -50px;
 	z-index: 1;
+}
+.tooltiptext h5::before {
+	content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -17px;
+  border-width: 17px;
+  border-style: solid;
+  border-color: transparent transparent transparent #141414;
+}
+.tooltiptext h5::after {
+	content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -17px;
+  border-width: 17px;
+  border-style: solid;
+  border-color: transparent #141414 transparent transparent;
 }
 @media (min-width: 768px){
 	.tooltiptext {
@@ -247,11 +268,20 @@ html {
 	}
 	.tooltiptext h5 {
 		position: relative;
-		top: 60px;
+		top: -50px;
 	}
 	.col-sm-12:hover .tooltiptext {
 		visibility: visible;
 	}
+}
+.member h1 {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-shadow: 5px 5px 5px #69d2e7;
+}
+.member p {
+	font-size: 20px;
 }
 
 /* About */
