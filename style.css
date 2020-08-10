@@ -293,6 +293,6 @@ html {
 	visibility: hidden;
 }
 .about .bg{
-	background-color: crimson;
+	background-color: #e0e0e0;
 	min-height: 1000px;
 }
