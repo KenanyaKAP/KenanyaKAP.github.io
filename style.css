@@ -79,6 +79,7 @@ html {
 .dd1child {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	text-shadow: 0px 0px 0px;
 }
 .dd1child:hover {
 	color: black !important;
@@ -86,13 +87,13 @@ html {
 .dd1child:active {
 	background-color: #afafaf;
 }
+.dropdown-menu {
+	background-color: transparent;
+}
 @media (min-width: 992px) {
 	.dropdown-menu {
 		background-color: rgba(0, 0, 0, 0.5);
 	}
-}
-.dropdown-menu {
-	background-color: transparent;
 }
 
 
