@@ -29,8 +29,8 @@ html {
 	}
 }
 .navbar-brand {
-	/* color: #69d2e7 !important; */
-	color: #ffffff !important;
+	color: #69d2e7 !important;
+	/* color: #ffffff !important; */
 	font-size: 30px;
 	transition: font-size .5s;
 	text-shadow: 10px 10px 10px black;
