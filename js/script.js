@@ -23,13 +23,14 @@ $(document).ready(function() {
 
 		//Navbar Background fading
 		if ($(document).scrollTop() > $('.member').offset().top - 400) {
-			$('.navbar').css("background-color", "#141414");
+			$('.navbar, .dropdown-menu').css("background-color", "#141414");
 			$('.navbar-brand').css("font-size", "20px");
 			if ($('html,body').width() > 974){
 				$('.navbar').css("padding-top", "10px");
 			}
 		} else {
 			$('.navbar').css("background-color", "#14141400");
+			$('.dropdown-menu').css("background-color", "rgba(0, 0, 0, 0.5)");
 			$('.navbar-brand').css("font-size", "30px");
 			if ($('html,body').width() > 974){
 				$('.navbar').css("padding-top", "50px");
@@ -54,6 +55,6 @@ $(document).ready(function() {
 			}
 		});
 
-		// alert($('.member h1').css('font-size'));
+		// alert($('.nav-item a').css('padding'));
 	});
 });

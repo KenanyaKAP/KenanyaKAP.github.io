@@ -23,6 +23,16 @@ html {
 	padding-bottom: 10px;
 	transition : background-color .5s, padding-top .5s;
 }
+.nav-link.active {
+	background-color: transparent !important;
+}
+@media (min-width: 992px) {	
+	.nav-link.active {
+		color: #000 !important;
+		background-color: #ffffff !important;
+		text-shadow: 0px 0px 0px;
+	}
+}
 @media (min-width: 992px){
 	.navbar {
 		padding-top: 50px;
@@ -42,7 +52,22 @@ html {
 }
 .nav-item {
 	margin-left: 30px;
+	min-width: 86px;
 	text-shadow: 10px 10px 10px black;
+}
+@media (min-width: 992px) {
+	.nav-item {
+		text-align: center;
+	}
+}
+.page-scroll {
+	padding: 8px;
+	margin-top: 3px;
+}
+@media (min-width: 992px) {
+	.page-scroll {
+		padding: 5px;
+	}
 }
 .dd1 {
 	display: block;
@@ -58,13 +83,19 @@ html {
 .dd1child:hover {
 	color: black !important;
 }
+.dd1child:active {
+	background-color: #afafaf;
+}
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* Home */
 .home .jumbotron {
 	padding-top: 110px;/* 110 */
 	padding-bottom: 110px;
 	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('img/bg2.jpg');
-	background-size: 100% 100%;
+	background-size: cover;
 	text-shadow: 4px 4px 4px black;
 	margin-bottom: 0px;
 }
