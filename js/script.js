@@ -30,10 +30,12 @@ $(document).ready(function() {
 			}
 		} else {
 			$('.navbar').css("background-color", "#14141400");
-			$('.dropdown-menu').css("background-color", "rgba(0, 0, 0, 0.5)");
 			$('.navbar-brand').css("font-size", "30px");
 			if ($('html,body').width() > 974){
 				$('.navbar').css("padding-top", "50px");
+				$('.dropdown-menu').css("background-color", "rgba(0, 0, 0, 0.5)");
+			} else {
+				$('.dropdown-menu').css("background-color", "transparent");
 			}
 		}
 

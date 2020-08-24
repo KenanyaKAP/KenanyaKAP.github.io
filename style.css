@@ -86,9 +86,15 @@ html {
 .dd1child:active {
 	background-color: #afafaf;
 }
-.dropdown-menu {
-	background-color: rgba(0, 0, 0, 0.5);
+@media (min-width: 992px) {
+	.dropdown-menu {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 }
+.dropdown-menu {
+	background-color: transparent;
+}
+
 
 /* Home */
 .home .jumbotron {
