@@ -29,7 +29,8 @@ html {
 	}
 }
 .navbar-brand {
-	color: #69d2e7 !important;
+	/* color: #69d2e7 !important; */
+	color: #ffffff !important;
 	font-size: 30px;
 	transition: font-size .5s;
 	text-shadow: 10px 10px 10px black;
@@ -62,7 +63,7 @@ html {
 .home .jumbotron {
 	padding-top: 110px;/* 110 */
 	padding-bottom: 110px;
-	background-image: url(img/bg1.jpg);
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('img/bg3.jpg');
 	background-size: 100% 100%;
 	text-shadow: 4px 4px 4px black;
 	margin-bottom: 0px;

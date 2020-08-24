@@ -21,7 +21,7 @@ $(document).ready(function() {
 	$('#scrollDiv').hide();
 	$(window).scroll(function() {
 
-		//Background fading
+		//Navbar Background fading
 		if ($(document).scrollTop() > $('.member').offset().top - 400) {
 			$('.navbar').css("background-color", "#141414");
 			$('.navbar-brand').css("font-size", "20px");
