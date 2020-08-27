@@ -1,0 +1,88 @@
+/* Custom CSS Font */
+.kaushan {
+	font-family: 'Kaushan Script', cursive !important;
+}
+.opensans {
+	font-family: 'Open Sans', sans-serif;
+}
+.oswald {
+	font-family: 'Oswald', sans-serif;
+}
+
+/* Body & HTML */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #141414;
+	transition : background-color .5s, padding-top .5s;
+}
+.nav-link.active {
+	background-color: transparent !important;
+}
+@media (min-width: 992px) {	
+	.nav-link.active {
+		color: #000 !important;
+		background-color: #ffffff !important;
+		text-shadow: 0px 0px 0px;
+	}
+}
+.navbar-brand {
+	color: #69d2e7 !important;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-shadow: 10px 10px 10px black;
+}
+.navbar-nav {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+}
+.nav-item {
+	margin-left: 30px;
+	min-width: 86px;
+	text-shadow: 10px 10px 10px black;
+}
+@media (min-width: 992px) {
+	.nav-item {
+		text-align: center;
+	}
+}
+.page-scroll {
+	padding: 8px;
+	margin-top: 3px;
+}
+@media (min-width: 992px) {
+	.page-scroll {
+		padding: 5px;
+	}
+}
+
+/* Organic */
+#organic::before {
+	display: block;
+	content: "";
+	height: 60px;
+	visibility: hidden;
+}
+.organic .bg {
+	background-color: #f1f1f1;
+	min-height: 1000px;
+}
+.organic .card {
+	border-radius: 10px;
+}
+.organic .card-body {
+	text-align: justify;
+}
+.organic h1 {
+	/* font-family: 'Oswald', sans-serif; */
+}
