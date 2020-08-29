@@ -9,6 +9,7 @@
 	font-family: 'Oswald', sans-serif;
 }
 
+
 /* Body & HTML */
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -105,6 +106,7 @@ html {
 	background-size: cover;
 	text-shadow: 4px 4px 4px black;
 	margin-bottom: 0px;
+	min-height: 696px;
 }
 @media (min-width: 992px){
 	.home .jumbotron {
@@ -118,7 +120,7 @@ html {
 	text-shadow: 10px 10px 10px black;
 }
 .home p {
-	font-size: 25px;
+	/* font-size: 25px; */
 	text-align: center;
 }
 @media (min-width: 992px){
@@ -137,11 +139,17 @@ html {
 	visibility: hidden;
 }
 .content .bg{
-	background-color: white;
+	background-color: #f9f9f9;
 	padding-bottom: 40px;
 }
 .content .card {
-	margin-top: 40px;
+	margin-top: 30px;
+	/* margin: 50px; */
+}
+.content img {
+	height: 300px;
+	object-fit: cover;
+	object-position: 0px 100%;
 }
 
 /* Member */
@@ -348,6 +356,6 @@ html {
 	visibility: hidden;
 }
 .about .bg{
-	background-color: white;
+	background-color: #f9f9f9;
 	min-height: 1000px;
 }

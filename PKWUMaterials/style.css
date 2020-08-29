@@ -83,16 +83,22 @@ html {
 .organic .card {
 	border-radius: 10px;
 }
+@media (min-width: 992px) {	
+	.organic .card {
+		margin-right: 100px;
+		margin-left: 100px;
+	}	
+}
 .organic .card-body {
 	text-align: justify;
 }
 @media (min-width: 992px) {	
 	.organic .card-body {
 		text-align: justify;
-		padding-top: 100px;
-		padding-bottom: 100px;
-		padding-left: 200px;
-		padding-right: 200px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 .organic .card-body img {
@@ -118,16 +124,22 @@ html {
 .inorganic .card {
 	border-radius: 10px;
 }
+@media (min-width: 992px) {	
+	.inorganic .card {
+		margin-right: 100px;
+		margin-left: 100px;
+	}	
+}
 .inorganic .card-body {
 	text-align: justify;
 }
 @media (min-width: 992px) {	
 	.inorganic .card-body {
 		text-align: justify;
-		padding-top: 100px;
-		padding-bottom: 100px;
-		padding-left: 200px;
-		padding-right: 200px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 .inorganic .card-body img {
@@ -153,16 +165,22 @@ html {
 .textiles .card {
 	border-radius: 10px;
 }
+@media (min-width: 992px) {	
+	.textiles .card {
+		margin-right: 100px;
+		margin-left: 100px;
+	}	
+}
 .textiles .card-body {
 	text-align: justify;
 }
 @media (min-width: 992px) {	
 	.textiles .card-body {
 		text-align: justify;
-		padding-top: 100px;
-		padding-bottom: 100px;
-		padding-left: 200px;
-		padding-right: 200px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 .textiles .card-body img {
