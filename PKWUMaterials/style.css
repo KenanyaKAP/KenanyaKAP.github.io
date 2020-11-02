@@ -41,8 +41,6 @@ html {
 .navbar-brand {
 	color: #69d2e7 !important;
 	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 900;
 	text-shadow: 10px 10px 10px black;
 }
 .navbar-nav {
