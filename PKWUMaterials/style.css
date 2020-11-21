@@ -159,6 +159,7 @@ html {
 }
 .textiles .bg {
 	min-height: 1000px;
+	padding-bottom: 50px;
 }
 .textiles .card {
 	border-radius: 10px;
@@ -189,6 +190,17 @@ html {
 }
 .textiles .card-body h2 {
 	font-family: 'Oswald', sans-serif;	
+}
+
+/* Footer */
+.footer .card {
+	border-radius: 0px;
+	background-color: #141414;
+}
+.footer .card-header {
+	color: #8f8f8f;
+	text-align: center;
+	font-size: 14px;
 }
 
 ul {

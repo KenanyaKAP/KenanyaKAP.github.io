@@ -363,3 +363,14 @@ html {
 	background-color: #f9f9f9;
 	min-height: 1000px;
 }
+
+/* Footer */
+.footer .card {
+	border-radius: 0px;
+	background-color: #141414;
+}
+.footer .card-header {
+	color: #8f8f8f;
+	text-align: center;
+	font-size: 14px;
+}
