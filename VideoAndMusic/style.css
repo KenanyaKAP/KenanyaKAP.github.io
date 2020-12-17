@@ -109,6 +109,14 @@ html {
 	font-family: 'Oswald', sans-serif;
 	font-weight: normal;
 }
+.music .colmusic {
+	margin-top: 50px;
+}
+@media (min-width: 768px) {
+	.music .colmusic {
+		margin-top: 0px;
+	}
+}
 
 /* Footer */
 .footer .card {
