@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
 	<meta charset="UTF-8">
@@ -21,24 +21,34 @@
 	</style>
 </head>
 
-<body class="dark:bg-slate-900">
+<body class="transition-all dark:bg-slate-900">
 <!-- <body class="bg-red-100 md:bg-orange-100 lg:bg-yellow-100 xl:bg-green-100 2xl:bg-sky-100"> -->
+	<div class="relative">
+		<div class="flex absolute right-10 top-10 z-10">
+			<input type="checkbox" class="hidden" id="dark-toggle" />
+			<label for="dark-toggle">
+				<div class="flex h-7 w-11 cursor-pointer items-center rounded-full bg-slate-300 transition-all dark:bg-slate-600 p-1">
+					<div class="toggle-circle h-6 w-6 rounded-full bg-white dark:bg-slate-900 transition duration-300 ease-in-out overflow-hidden"></div>
+				</div>
+			</label>
+		</div>
+	</div>
 	<section id="home" class="relative overflow-hidden">
 		<div class="container mx-auto pt-8 px-8 lg:pt-16 lg:px-16">
 			<div class="grid md:grid-cols-2 lg:grid-cols-5 lg:grid-flow-col">
 				<!-- Bio -->
 				<div class="mb-8 md:mb-0 lg:col-span-2 lg:mt-10">
-					<h1 class="text-sky-400 text-lg lg:text-2xl font-semibold mb-5 bg-white dark:bg-slate-900">Hi There, I'm <span class="block font-bold text-4xl lg:text-6xl text-slate-700 -mt-1 bg-white dark:bg-slate-900 dark:text-slate-100">Kenanya Prasetyo</span></h1>
-					<div class="bg-white dark:bg-slate-900">
+					<h1 class="text-sky-400 text-lg lg:text-2xl font-semibold mb-5 bg-white transition-all dark:bg-slate-900">Hi There, I'm <span class="block font-bold text-4xl lg:text-6xl text-slate-700 -mt-1 bg-white dark:bg-slate-900 transition-all dark:text-slate-100">Kenanya Prasetyo</span></h1>
+					<div class="bg-white transition-all dark:bg-slate-900">
 						<h2 class="text-transparent text-xl lg:text-3xl font-bold mb-7 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">Game Developer</h2>
 					</div>
-					<p class="text-slate-500 lg:text-lg bg-white dark:bg-slate-900 dark:text-slate-400">Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
+					<p class="text-slate-500 lg:text-lg bg-white dark:bg-slate-900 transition-all dark:text-slate-400">Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
 				</div>
 				<!-- Picture -->
 				<div class="mb-5 relative md:row-span-2 md:mb-0 lg:col-span-3 lg:col-start-3 xl:max-w-[40rem] xl:ml-auto">
 					<span class="absolute -z-10 w-96 md:w-full left-1/2 -translate-x-1/2 md:hidden">
 						<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-							<path class="fill-sky-200 dark:fill-[#193a51]" d="M40.9,-44.9C53.8,-38,65.5,-25.8,71.6,-9.9C77.6,6,78,25.6,69.2,39.1C60.4,52.6,42.5,60,25.9,62.1C9.4,64.1,-5.8,60.9,-18.4,54.5C-30.9,48.2,-40.8,38.8,-52,26.6C-63.1,14.4,-75.5,-0.6,-73.2,-12.8C-70.9,-25,-54,-34.6,-39.3,-41.2C-24.7,-47.8,-12.3,-51.4,0.8,-52.4C14,-53.5,28.1,-51.8,40.9,-44.9Z" transform="translate(100 100)" />
+							<path class="fill-sky-200 transition-all dark:fill-[#193a51]" d="M40.9,-44.9C53.8,-38,65.5,-25.8,71.6,-9.9C77.6,6,78,25.6,69.2,39.1C60.4,52.6,42.5,60,25.9,62.1C9.4,64.1,-5.8,60.9,-18.4,54.5C-30.9,48.2,-40.8,38.8,-52,26.6C-63.1,14.4,-75.5,-0.6,-73.2,-12.8C-70.9,-25,-54,-34.6,-39.3,-41.2C-24.7,-47.8,-12.3,-51.4,0.8,-52.4C14,-53.5,28.1,-51.8,40.9,-44.9Z" transform="translate(100 100)" />
 						</svg>
 					</span>
 					<div class="w-96 md:w-full aspect-square overflow-hidden mx-auto object-bottom">
@@ -46,11 +56,10 @@
 					</div>
 				</div>
 				<!-- Sosmed -->
-				<div class="lg:col-span-2 flex flex-wrap gap-2 h-16">
-					<h2 class="text-sky-400 text-lg font-semibold self-center bg-white dark:bg-slate-900">Check Out My</h2>
-					<span class="w-12 h-12 rounded-full bg-slate-300 self-center"><img class="self-center scale-[.6]" src="/src/img/ig.png" alt="Ig"></span>
-					<span class="w-12 h-12 rounded-full bg-slate-300 self-center"><img class="self-center scale-[.6]" src="/src/img/ig.png" alt="Ig"></span>
-					<span class="w-12 h-12 rounded-full bg-slate-300 self-center"><img class="self-center scale-[.6]" src="/src/img/ig.png" alt="Ig"></span>
+				<div class="lg:col-span-2 flex flex-wrap gap-3 h-16">
+					<h2 class="text-sky-400 text-lg font-semibold self-center bg-white transition-all dark:bg-slate-900">Check Out My</h2>
+					<a href="#" class="w-12 h-12 rounded-full bg-slate-200 transition-all dark:bg-slate-700 self-center"><img class="transition-all dark:invert self-center scale-[.6]" src="/src/img/ig.png" alt="Instagram"></a>
+					<a href="#" class="w-12 h-12 rounded-full bg-slate-200 transition-all dark:bg-slate-700 self-center"><img class="transition-all dark:invert self-center scale-[.6]" src="/src/img/in.png" alt="LinkedIn"></a>
 				</div>
 			</div>
 		</div>
@@ -58,6 +67,14 @@
 	</section>
 
 	<!-- <div class="mb-96"></div> -->
+	<script src="../src/js/script.js"></script>
+	<script>
+		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	</script>
 </body>
 
 </html>
