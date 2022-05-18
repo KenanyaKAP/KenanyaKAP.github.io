@@ -22,29 +22,33 @@
 </head>
 
 <body>
-	<section id="home" class="p-5">
-		<div class="container">
-			<div class="flex flex-wrap">
-				<div class="w-full self-center mb-10">
-					<div class="mb-3">
-						<h1 class="text-sky-600 text-lg font-semibold">Hi There, I'm <span class="block font-bold text-4xl text-slate-700 -mt-1">Kenanya Prasetyo</span></h1>
-					</div>
-					<div class="mb-2">
-						<h2 class="text-sky-600 text-xl font-bold mb-3">Game Developer</h2>
-					</div>
-					<div class="text-slate-500">
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit non eveniet voluptates fuga quas veritatis quasi, harum ut deserunt illum perferendis magnam! Ab quas, eligendi iste quia ipsum eveniet explicabo!</p>
-					</div>
+<!-- <body class="bg-red-100 md:bg-orange-100 lg:bg-yellow-100 xl:bg-green-100 2xl:bg-sky-100"> -->
+	<section id="home" class="p-8 lg:p-16 bg-[url(/src/img/radial-tech-bg.svg)] bg-cover">
+		<div class="container mx-auto">
+			<div class="grid md:grid-cols-2 lg:grid-cols-5 lg:grid-flow-col">
+				<!-- Bio -->
+				<div class="mb-8 md:mb-0 lg:col-span-2 lg:mt-10">
+					<h1 class="text-sky-400 text-lg lg:text-2xl font-semibold mb-5">Hi There, I'm <span class="block font-bold text-4xl lg:text-6xl text-slate-700 -mt-1">Kenanya Prasetyo</span></h1>
+					<h2 class="text-transparent text-xl lg:text-3xl font-bold mb-7 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">Game Developer</h2>
+					<p class="text-slate-500 lg:text-lg">Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
 				</div>
-				<div class="w-full self-center relative">
-					<span class="absolute h-96 w-96 -z-10 left-1/2 -translate-x-1/2">
+				<!-- Picture -->
+				<div class="mb-5 relative md:row-span-2 md:mb-0 lg:col-span-3 lg:col-start-3 xl:max-w-[40rem] xl:ml-auto">
+					<!-- <span class="absolute -z-10 w-96 md:w-full left-1/2 -translate-x-1/2">
 						<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 							<path class="fill-sky-200" d="M40.9,-44.9C53.8,-38,65.5,-25.8,71.6,-9.9C77.6,6,78,25.6,69.2,39.1C60.4,52.6,42.5,60,25.9,62.1C9.4,64.1,-5.8,60.9,-18.4,54.5C-30.9,48.2,-40.8,38.8,-52,26.6C-63.1,14.4,-75.5,-0.6,-73.2,-12.8C-70.9,-25,-54,-34.6,-39.3,-41.2C-24.7,-47.8,-12.3,-51.4,0.8,-52.4C14,-53.5,28.1,-51.8,40.9,-44.9Z" transform="translate(100 100)" />
 						</svg>
-					</span>
-					<div class="w-[20rem] h-[20rem] overflow-hidden mx-auto">
+					</span> -->
+					<div class="w-96 md:w-full aspect-square overflow-hidden mx-auto md:-mb-10 object-bottom">
 						<img src="/src/img/full-body.png" alt="Kenanya">
 					</div>
+				</div>
+				<!-- Sosmed -->
+				<div class="lg:col-span-2 flex flex-wrap gap-2 h-16">
+					<!-- <h2 class="text-sky-400 text-lg font-semibold self-center">Check Out My</h2>
+					<span class="w-12 h-12 rounded-full bg-slate-300 self-center"><img class="self-center scale-[.6]" src="/src/img/ig.png" alt="Ig"></span>
+					<span class="w-12 h-12 rounded-full bg-slate-300 self-center"><img class="self-center scale-[.6]" src="/src/img/ig.png" alt="Ig"></span>
+					<span class="w-12 h-12 rounded-full bg-slate-300 self-center"><img class="self-center scale-[.6]" src="/src/img/ig.png" alt="Ig"></span> -->
 				</div>
 			</div>
 		</div>
