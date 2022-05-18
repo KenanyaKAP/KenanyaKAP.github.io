@@ -1,7 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3750 2083" enable-background="new 0 0 3750 2083">
   <style>
-    .st2{fill:none;stroke:#008787;stroke-linejoin:round;stroke-miterlimit:10}.st2,.st3,.st5{stroke-width:4;stroke-linecap:round}.st3{fill:none;stroke:#008787;stroke-linejoin:round}.st5{stroke-miterlimit:10;stroke-dasharray:12}.st5,.st6,.st8{fill:none;stroke:#008787;stroke-linejoin:round}.st6{stroke-miterlimit:10;stroke-width:61;stroke-dasharray:4,30}.st8{stroke-width:30;stroke-dasharray:4,20}.st13,.st8,.st9{stroke-miterlimit:10}.st9{fill:none;stroke:#008787;stroke-linejoin:round;stroke-dasharray:4,20;stroke-width:20}.st13{stroke-width:4;stroke-linecap:round}.st13,.st14,.st16,.st17,.st19,.st20{fill:none;stroke:#54ffbd;stroke-linejoin:round}.st14{stroke-width:4;stroke-linecap:round}.st16,.st17,.st19,.st20{stroke-miterlimit:10}.st16{stroke-linecap:round;stroke-width:4;stroke-dasharray:12}.st17,.st19,.st20{stroke-width:61;stroke-dasharray:4,30}.st19,.st20{stroke-width:30;stroke-dasharray:4,20}.st20{stroke-width:20}
+    .st2 {
+      fill:none;
+      stroke:#008787;
+      stroke-linejoin:round;
+      stroke-miterlimit:10;
+    }
+
+    .st2,.st3,.st5 {
+      stroke-width:4;
+      stroke-linecap:round;
+    }
+    
+    .st3 {
+      fill:none;
+      stroke:#008787;
+      stroke-linejoin:round;
+    }
+    
+    .st5 {
+      stroke-miterlimit:10;
+      stroke-dasharray:12;
+    }
+    
+    .st5,.st6,.st8 {
+      fill:none;
+      stroke:#008787;
+      stroke-linejoin:round;
+    }
+    
+    .st6 {
+      stroke-miterlimit:10;
+      stroke-width:61;
+      stroke-dasharray:4,30;
+    }
+    
+    .st8 {
+      stroke-width:30;
+      stroke-dasharray:4,20;
+    }
+    
+    .st13,.st8,.st9 {
+      stroke-miterlimit:10;
+    }
+    
+    .st9 {
+      fill:none;
+      stroke:#008787;
+      stroke-linejoin:round;
+      stroke-dasharray:4,20;
+      stroke-width:20;
+    }
+    
+    .st13 {
+      stroke-width:4;
+      stroke-linecap:round;
+    }
+    
+    .st13,.st14,.st16,.st17,.st19,.st20 {
+      fill:none;
+      stroke:#54ffbd;
+      stroke-linejoin:round;
+    }
+    
+    .st14 {
+      stroke-width:4;
+      stroke-linecap:round;
+    }
+    
+    .st16,.st17,.st19,.st20 {
+      stroke-miterlimit:10;
+    }
+    
+    .st16 {
+      stroke-linecap:round;
+      stroke-width:4;
+      stroke-dasharray:12;
+    }
+    
+    .st17,.st19,.st20 {
+      stroke-width:61;
+      stroke-dasharray:4,30;
+    }
+    
+    .st19,.st20 {
+      stroke-width:30;
+      stroke-dasharray:4,20;
+    }
+    
+    .st20 {
+      stroke-width:20;
+    }
   </style>
   <g id="Sroke">
     <defs>
