@@ -13,9 +13,9 @@
 	<link rel="icon" href="img/logo.png">
 	<title>Kenanya's Website</title>
 	<style>
-		* {
+		/* * {
 			border: 1px solid red;
-		}
+		} */
 	</style>
 </head>
 
@@ -23,7 +23,7 @@
 <!-- <body class="bg-red-100 md:bg-orange-100 lg:bg-yellow-100 xl:bg-green-100 2xl:bg-sky-100"> -->
 	
   <!-- Dark Mode -->
-  <!-- <div class="relative">
+  <div class="relative">
 		<div class="flex absolute right-10 top-10 z-10">
 			<input type="checkbox" class="hidden" id="dark-toggle" />
 			<label for="dark-toggle">
@@ -32,30 +32,39 @@
 				</div>
 			</label>
 		</div>
-	</div> -->
+	</div>
   <!--  -->
 
   <!-- Home -->
-	<section id="home">
-		<div class="bg-cover bg-right hue-rotate-30" style="background-image: url(/src/img/radial-tech-bg.svg);">
+	<section id="home" class="transition-all dark:bg-slate-900">
+		<div class="bg-cover bg-left hue-rotate-30" style="background-image: url(/src/img/radial-tech-bg.svg);">
       <div class="container -hue-rotate-30 mx-auto">
-        <div class="grid md:grid-cols-5 md:grid-flow-row-dense">
-          <div class="flex items-center md:col-span-2">
-            BIO
-            <!-- <div class="mx-auto w-[75%]">
-              <h1 class="text-lg md:text-2xl font-semibold">
-                Hi There, I'm
-                <span class="block font-bold text-4xl lg:text-6xl">Kenanya Prasetyo</span>
-              </h1>
-              <h1>Game Developer</h1>
-              <p>Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
-            </div> -->
+        <div class="grid md:grid-cols-2 md:grid-flow-row-dense lg:grid-cols-5">
+          <div class="flex items-end lg:col-span-2">
+            <div class="mt-8 mx-auto md:mr-0 w-[75%] lg:mb-10">
+              <h3 class="transition-all text-2xl lg:text-4xl text-sky-600 text-shadow dark:text-shadow-dark">Hi There, I'm</h3>
+              <div class="relative mb-4 lg:mb-5">
+                <h1 class="transition-all absolute font-bold pb-3 text-4xl lg:text-6xl text-shadow dark:text-shadow-dark -z-10">Kenanya Prasetyo</h1>
+                <h1 class="transition-all font-bold pb-3 bg-gradient-to-br from-slate-800 to-gray-600 bg-clip-text text-4xl lg:text-6xl text-transparent dark:from-slate-100 to dark:to-slate-300">Kenanya Prasetyo</h1>
+              </div>
+              <div class="relative mb-4 lg:mb-10">
+                <h3 class="transition-all absolute font-bold pb-1 text-2xl lg:text-4xl text-transparent text-shadow dark:text-shadow-dark -z-10">Game Developer</h3>
+                <h3 class="transition-all font-bold pb-1 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-2xl lg:text-4xl text-transparent">Game Developer</h3>
+              </div>
+              <p class="transition-all text-shadow dark:text-shadow-dark lg:text-lg text-slate-600 dark:text-slate-400">Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
+            </div>
           </div>
-          <div class="aspect-square relative md:col-span-3 md:row-span-2">
-            <img class="absolute bottom-0 left-[7.5%] w-[85%] h-[85%] object-cover object-top" src="/src/img/full-body.png" alt="Kenanya">
+          <div class="max-h-screen relative md:row-span-2 lg:col-span-3">
+            <div class="relative w-full h-full aspect-square">
+              <img class="absolute bottom-0 left-1/2 -translate-x-1/2 max-w-[85%] max-h-[85%] aspect-square object-cover object-top" src="/src/img/full-body.png" alt="Kenanya">
+            </div>
           </div>
-          <div class="flex items-center md:col-span-2">
-            SOSMED
+          <div class="transition-all flex items-center mt-5 mb-5 lg:col-span-2 text-shadow dark:text-shadow-dark">
+            <div class="flex mx-auto md:mr-0 w-[75%] items-center gap-4">
+              <h1 class="text-md lg:text-xl text-slate-600 dark:text-slate-400">Check Out My</h1>
+              <a href="https://www.instagram.com/ken_3772/" target="_blank" class="border-2 border-slate-600 w-11 aspect-square rounded-full transition-all self-center"><img class="transition-all dark:invert self-center scale-[.5]" src="/src/img/ig.svg" alt="Instagram"></a>
+              <a href="https://www.linkedin.com/in/kenpras/" target="_blank" class="border-2 border-slate-600 w-11 aspect-square rounded-full transition-all self-center"><img class="transition-all dark:invert self-center scale-[.5]" src="/src/img/in.svg" alt="LinkedIn"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -63,8 +72,14 @@
 	</section>
   <!--  -->
 
-  <!-- TESTING -->
-  
+  <!-- Heyyo -->
+  <section id="heyo" class="bg-slate-400">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
   <!--  -->
 
 	<!-- <div class="mb-96"></div> -->

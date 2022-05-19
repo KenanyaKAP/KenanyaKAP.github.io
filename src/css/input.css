@@ -5,3 +5,63 @@
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 
+    4px 0px 0px white,
+    3.8px 1px 0px white,
+    3.45px 2px 0px white,
+    2.83px 2.83px 0px white,
+    2px 3.45px 0px white,
+    1px 3.8px 0px white,
+    0px 4px 0px white,
+    -1px 3.8px 0px white,
+    -2px 3.45px 0px white,
+    -2.83px 2.83px 0px white,
+    -3.45px 2px 0px white,
+    -3.8px 1px 0px white,
+    -4px 0px 0px white,
+    -3.8px -1px 0px white,
+    -3.45px -2px 0px white,
+    -2.83px -2.83px 0px white,
+    -2px -3.45px 0px white,
+    -1px -3.8px 0px white,
+    0px -4px 0px white,
+    1px -3.8px 0px white,
+    2px -3.45px 0px white,
+    2.83px -2.83px 0px white,
+    3.45px -2px 0px white,
+    3.8px -1px 0px white,
+    4px 0px 0px white;
+  }
+  
+  .text-shadow-dark {
+    text-shadow: 
+    4px 0px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    3.8px 1px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    3.45px 2px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    2.83px 2.83px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    2px 3.45px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    1px 3.8px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    0px 4px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -1px 3.8px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -2px 3.45px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -2.83px 2.83px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -3.45px 2px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -3.8px 1px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -4px 0px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -3.8px -1px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -3.45px -2px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -2.83px -2.83px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -2px -3.45px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    -1px -3.8px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    0px -4px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    1px -3.8px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    2px -3.45px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    2.83px -2.83px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    3.45px -2px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    3.8px -1px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
+    4px 0px 0px rgb(15 23 42 / var(--tw-bg-opacity));
+  }
+}
