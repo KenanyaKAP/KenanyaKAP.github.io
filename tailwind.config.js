@@ -7,6 +7,9 @@ module.exports = {
         'roboto': ['Roboto Mono'],
         'catamaran': ['Catamaran'],
       },
+      screens: {
+        '2xl': '1320px',
+      },
     },
   },
   plugins: [],

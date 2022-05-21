@@ -64,4 +64,8 @@
     3.8px -1px 0px rgb(15 23 42 / var(--tw-bg-opacity)),
     4px 0px 0px rgb(15 23 42 / var(--tw-bg-opacity));
   }
+
+  .stop-col-sky-300 {
+    stop-color: #7dd3fc;
+  }
 }
