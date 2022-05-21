@@ -9,17 +9,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/public/css/style.css">
-	<link rel="icon" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="icon" href="/img/logo.png">
 	<title>Kenanya's Website</title>
 	<style>
-		/* * {
-			border: 1px solid red;
-		} */
+		* {
+      border: 1px solid red;
+		}
 	</style>
 </head>
 
-<body>
+<body class="font-catamaran">
 <!-- <body class="bg-red-100 md:bg-orange-100 lg:bg-yellow-100 xl:bg-green-100 2xl:bg-sky-100"> -->
 	
   <!-- Dark Mode -->
@@ -37,7 +38,7 @@
 
   <!-- Home -->
 	<section id="home" class="transition-all bg-white dark:bg-slate-900">
-		<div class="bg-cover bg-left hue-rotate-30" style="background-image: url(/src/img/radial-tech-bg.svg);">
+		<div class="bg-cover bg-left hue-rotate-30" style="background-image: url(/img/radial-tech-bg.svg);">
       <div class="container -hue-rotate-30 mx-auto p-5">
         <div class="grid items-center md:grid-cols-2 md:grid-flow-row-dense">
           <div class="md:col-span-1">
@@ -54,16 +55,16 @@
               <p class="text-justify transition-all text-shadow dark:text-shadow-dark lg:text-lg text-slate-600 dark:text-slate-400">Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
             </div>
           </div>
-          <div class="-mt-5 md:col-span-1 md:row-span-2 md:mt-0">
-            <div class="relative aspect-square max-h-[44rem]">
+          <div class="h-full -mt-5 md:col-span-1 md:row-span-2 md:mt-0 flex items-end">
+            <div class="w-full relative aspect-square max-h-[44rem]">
               <div class="absolute -bottom-5 left-1/2 -translate-x-1/2 h-[85%] w-[85%]">
-                <img class="aspect-square object-cover object-top" src="/src/img/full-body.png" alt="Kenanya">
+                <img class="aspect-square object-cover object-top" src="/img/full-body.png" alt="Kenanya">
               </div>
             </div>
           </div>
           <div class="md:col-span-1 mt-10 md:mt-5 self-start">
-            <div class="w-full md:w-[80%] ml-auto flex items-center gap-4">
-              <h1 class="transition-all font-medium text-md lg:text-xl text-sky-600 text-shadow dark:text-shadow-dark">Check Out My</h1>
+            <div class="w-full md:w-[80%] ml-auto flex flex-wrap items-center gap-4">
+              <h1 class="w-full transition-all font-medium text-md lg:text-xl text-sky-600 text-shadow dark:text-shadow-dark">Check Out My</h1>
               <a href="https://www.instagram.com/ken_3772/" target="_blank" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 w-11 aspect-square rounded-full transition-all self-center">
                 <svg class="scale-[.6]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
                   <g id="XMLID_13_">
@@ -82,7 +83,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="#" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 h-11 rounded-full flex items-center px-3 transition-all">
+              <a href="./file/CV.pdf" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 h-11 rounded-full flex items-center px-3 transition-all">
                 <h1 class="transition-all font-medium text-md lg:text-xl text-slate-600 dark:text-slate-300">Curriculum Vitae</h1>
               </a>
             </div>
@@ -92,18 +93,46 @@
     </div>
 	</section>
   <!--  -->
-
-  <!-- About -->
+  
+  <!-- Project -->
   <div class="transition-all bg-slate-100 dark:bg-slate-800">
     <div class="container mx-auto px-5 py-10">
-      <div class="inline">
-        <br><br>
+      <h1 class="transition-all font-bold pb-3 bg-gradient-to-br from-slate-800 to-gray-600 bg-clip-text text-4xl lg:text-6xl text-transparent text-center">My Project</h1>
+      <div class="p-5 flex flex-wrap max-h-max">
+        <div class="w-full font-odibee font-black text-3xl tracking-wide">
+          <span class="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+            GAME
+          </span>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src="/img/lost/0.png" alt="">
+        </div>
+        <div class="w-full md:w-1/2">
+          <h1 class="font-extrabold text-2xl">LOST: The Day I Have To Change</h1>
+          <h1 class="font-bold">Genre: Mystery, Puzzle, Adventure, Sci-Fi</h1>
+          <p class="text-justify">Telling the story of a 10 year old boy named Baskara Raya who is a whiny child. He lost his father since he was 2 years old. In the game, the player will be playing as Baskara Raya (Raya) who tries to solve the mystery of why everyone is missing. Like in the genre, here Raya will be faced with a lot of puzzle that must be solved to get closer to the truth, starting from english riddles, math riddles, simple logic, making potions, and collecting objects. Players will later be accompanied by a mysterious note that can guide the player.</p>
+        </div>
+      </div>
+      <div class="p-5">
+        2
+      </div>
+      <div class="p-5">
+        3
+      </div>
+      <div class="p-5">
+        4
+      </div>
+      <div class="p-5">
+        5
+      </div>
+      <div class="p-5">
+        6
       </div>
     </div>
   </div>
   <!--  -->
   
-  <!-- Project -->
+  <!-- Footer -->
   <div class="transition-all bg-white dark:bg-slate-900">
     <div class="container mx-auto px-5 py-10">
       <div class="inline">
@@ -113,18 +142,8 @@
   </div>
   <!--  -->
 
-  <!-- Footer -->
-  <div class="transition-all bg-slate-100 dark:bg-slate-800">
-    <div class="container mx-auto px-5 py-10">
-      <div class="inline">
-        <br><br>
-      </div>
-    </div>
-  </div>
-  <!--  -->
-
   <!-- Script -->
-	<script src="../src/js/script.js"></script>
+	<script src="/js/script.js"></script>
 	<script>
 		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
 			document.documentElement.classList.add('dark');
