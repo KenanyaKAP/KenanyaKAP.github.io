@@ -8,7 +8,7 @@
 
 @layer base {
   * {
-    @apply text-slate-700 dark:text-slate-200;
+    @apply text-slate-700 dark:text-slate-200 transition-all;
   }
 }
 
@@ -73,5 +73,25 @@
 
   .stop-col-sky-300 {
     stop-color: #7dd3fc;
+  }
+
+  .text-my-ellipsis {
+    width: 300px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: unset;
+    overflow: hidden;
+
+  }
+
+  .fade-inout {
+    animation-name: fade-inout;
+    animation-duration: 6s;
+  }
+
+  @keyframes fade-inout {
+    0% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+    100% { opacity: 0; }
   }
 }

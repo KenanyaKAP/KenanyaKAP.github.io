@@ -2,57 +2,58 @@
 <html lang="en" class="">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="icon" href="/img/logo.png">
-	<title>Kenanya's Website</title>
-	<style>
-		* {
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/img/logo.png">
+  <title>Kenanya's Website</title>
+  <style>
+    /* * {
       border: 1px solid red;
-		}
-	</style>
+    } */
+  </style>
 </head>
 
 <body class="font-catamaran">
 <!-- <body class="bg-red-100 md:bg-orange-100 lg:bg-yellow-100 xl:bg-green-100 2xl:bg-sky-100"> -->
-	
+  
   <!-- Dark Mode -->
-  <div class="relative">
-		<div class="flex absolute right-5 top-5 z-10">
-			<input type="checkbox" class="hidden" id="dark-toggle" />
-			<label for="dark-toggle">
-				<div class="flex h-7 w-11 cursor-pointer items-center rounded-full bg-slate-300 transition-all dark:bg-slate-600 p-1">
-					<div class="toggle-circle h-6 w-6 rounded-full bg-white dark:bg-slate-900 transition duration-300 ease-in-out overflow-hidden"></div>
-				</div>
-			</label>
-		</div>
-	</div>
+  <!-- fixed->relative, at child add absolute, remove z20 -->
+  <div class="fixed z-20">
+    <div class="flex right-5 top-5 z-10">
+      <input type="checkbox" class="hidden" id="dark-toggle" />
+      <label for="dark-toggle">
+        <div class="flex h-7 w-11 cursor-pointer items-center rounded-full bg-slate-300  dark:bg-slate-600 p-1">
+          <div class="toggle-circle h-6 w-6 rounded-full bg-white dark:bg-slate-900 transition duration-300 ease-in-out overflow-hidden"></div>
+        </div>
+      </label>
+    </div>
+  </div>
   <!--  -->
 
   <!-- Home -->
-	<section id="home" class="transition-all bg-white dark:bg-slate-900">
-		<div class="bg-cover bg-left hue-rotate-30" style="background-image: url(/img/radial-tech-bg.svg);">
+  <section id="home" class=" bg-white dark:bg-slate-900">
+    <div class="bg-cover bg-left hue-rotate-30" style="background-image: url(/img/radial-tech-bg.svg);">
       <div class="container -hue-rotate-30 mx-auto p-5">
         <div class="grid items-center md:grid-cols-2 md:grid-flow-row-dense">
           <div class="md:col-span-1">
             <div class="w-full md:w-[80%] ml-auto">
-              <h3 class="transition-all text-2xl lg:text-4xl text-sky-600 text-shadow dark:text-shadow-dark">Hi There, I'm</h3>
+              <h3 class=" text-2xl lg:text-4xl text-sky-600 text-shadow dark:text-shadow-dark">Hi There, I'm</h3>
               <div class="relative lg:mb-10">
-                <h1 class="transition-all absolute font-bold pb-3 text-4xl lg:text-6xl text-shadow dark:text-shadow-dark -z-10">Kenanya Prasetyo</h1>
-                <h1 class="transition-all font-bold pb-3 bg-gradient-to-br from-slate-800 to-gray-600 bg-clip-text text-4xl lg:text-6xl text-transparent dark:from-slate-100 to dark:to-slate-300">Kenanya Prasetyo</h1>
+                <h1 class=" absolute font-bold pb-3 text-4xl lg:text-6xl text-shadow dark:text-shadow-dark -z-10">Kenanya Prasetyo</h1>
+                <h1 class=" font-bold pb-3 bg-gradient-to-br from-slate-800 to-gray-600 bg-clip-text text-4xl lg:text-6xl text-transparent dark:from-slate-100 to dark:to-slate-300">Kenanya Prasetyo</h1>
               </div>
               <div class="relative lg:mb-10">
-                <h3 class="transition-all absolute font-bold pb-1 text-2xl lg:text-4xl text-transparent text-shadow dark:text-shadow-dark -z-10">Game Developer</h3>
-                <h3 class="transition-all font-bold pb-1 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-2xl lg:text-4xl text-transparent">Game Developer</h3>
+                <h3 class=" absolute font-bold pb-1 text-2xl lg:text-4xl text-transparent text-shadow dark:text-shadow-dark -z-10">Game Developer</h3>
+                <h3 class=" font-bold pb-1 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-2xl lg:text-4xl text-transparent">Game Developer</h3>
               </div>
-              <p class="text-justify transition-all text-shadow dark:text-shadow-dark lg:text-lg text-slate-600 dark:text-slate-400">Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
+              <p class="text-justify  text-shadow dark:text-shadow-dark lg:text-lg text-slate-600 dark:text-slate-400">Kenanya Keandra Adriel Prasetyo is an undergraduate student of Computer Engineering ITS 2021 Surabaya. He is Interested and has been experienced in Game Development.</p>
             </div>
           </div>
           <div class="h-full -mt-5 md:col-span-1 md:row-span-2 md:mt-0 flex items-end">
@@ -64,76 +65,129 @@
           </div>
           <div class="md:col-span-1 mt-10 md:mt-5 self-start">
             <div class="w-full md:w-[80%] ml-auto flex flex-wrap items-center gap-4">
-              <h1 class="w-full transition-all font-medium text-md lg:text-xl text-sky-600 text-shadow dark:text-shadow-dark">Check Out My</h1>
-              <a href="https://www.instagram.com/ken_3772/" target="_blank" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 w-11 aspect-square rounded-full transition-all self-center">
+              <h1 class="w-full  font-medium text-md lg:text-xl text-sky-600 text-shadow dark:text-shadow-dark">Check Out My</h1>
+              <a href="https://www.instagram.com/ken_3772/" target="_blank" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 w-11 aspect-square rounded-full  self-center">
                 <svg class="scale-[.6]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
                   <g id="XMLID_13_">
-                    <path class="transition-all fill-slate-600 dark:fill-slate-300" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
-                    <path class="transition-all fill-slate-600 dark:fill-slate-300" id="XMLID_81_" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z" />
-                    <circle class="transition-all fill-slate-600 dark:fill-slate-300" id="XMLID_83_" cx="418.306" cy="134.072" r="34.149" />
+                    <path class=" fill-slate-600 dark:fill-slate-300" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+                    <path class=" fill-slate-600 dark:fill-slate-300" id="XMLID_81_" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z" />
+                    <circle class=" fill-slate-600 dark:fill-slate-300" id="XMLID_83_" cx="418.306" cy="134.072" r="34.149" />
                   </g>
                 </svg>
               </a>
-              <a href="https://www.linkedin.com/in/kenpras/" target="_blank" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 w-11 aspect-square rounded-full transition-all self-center">
+              <a href="https://www.linkedin.com/in/kenpras/" target="_blank" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 w-11 aspect-square rounded-full  self-center">
                 <svg class="scale-[.55]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
                   <g id="XMLID_801_">
-                    <path class="transition-all fill-slate-600 dark:fill-slate-300" id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73C77.16,101.96974.922,99.73,72.16,99.73z" />
-                    <path class="transition-all fill-slate-600 dark:fill-slate-300" id="XMLID_803_" d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z" />
-                    <path class="transition-all fill-slate-600 dark:fill-slate-300" id="XMLID_804_" d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995C310,145.43,300.549,94.761,230.454,94.761z" />
+                    <path class=" fill-slate-600 dark:fill-slate-300" id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73C77.16,101.96974.922,99.73,72.16,99.73z" />
+                    <path class=" fill-slate-600 dark:fill-slate-300" id="XMLID_803_" d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z" />
+                    <path class=" fill-slate-600 dark:fill-slate-300" id="XMLID_804_" d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995C310,145.43,300.549,94.761,230.454,94.761z" />
                   </g>
                 </svg>
               </a>
-              <a href="./file/CV.pdf" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 h-11 rounded-full flex items-center px-3 transition-all">
-                <h1 class="transition-all font-medium text-md lg:text-xl text-slate-600 dark:text-slate-300">Curriculum Vitae</h1>
+              <a href="./file/CV.pdf" class="bg-slate-100 dark:bg-slate-700 border-2 border-slate-400 dark:border-slate-600 h-11 rounded-full flex items-center px-3 ">
+                <h1 class=" font-medium text-md lg:text-xl text-slate-600 dark:text-slate-300">Curriculum Vitae</h1>
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-	</section>
+  </section>
   <!--  -->
   
   <!-- Project -->
-  <div class="transition-all bg-slate-100 dark:bg-slate-800">
-    <div class="container mx-auto px-5 py-10">
-      <h1 class="transition-all font-bold pb-3 bg-gradient-to-br from-slate-800 to-gray-600 bg-clip-text text-4xl lg:text-6xl text-transparent text-center">My Project</h1>
-      <div class="p-5 flex flex-wrap max-h-max">
-        <div class="w-full font-odibee font-black text-3xl tracking-wide">
-          <span class="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-            GAME
-          </span>
-        </div>
+  <div class="bg-slate-100 dark:bg-slate-800">
+    <div class="container mx-auto px-5 py-10 lg:pt-20">
+      <h1 class="font-bold pb-3 bg-gradient-to-br from-slate-800 to-gray-600 bg-clip-text text-4xl lg:text-6xl text-transparent text-center dark:from-slate-100 to dark:to-slate-300 mb-4">My Project</h1>
+      
+      <!-- Project 1 -->
+      <div class="flex flex-wrap md:p-10">
         <div class="w-full md:w-1/2">
-          <img src="/img/lost/0.png" alt="">
+          <h1 class="font-odibee font-black text-3xl tracking-wide bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">GAME</h1>
+          <h1 class="font-extrabold text-4xl mb-3">BeCome</h1>
+          <div class="md:w-[324px] lg:w-[425px] xl:w-[600px] aspect-video relative slide-container">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/0.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/1.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/2.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/3.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/4.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/5.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/6.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/become/7.png" alt="Lost-Pic">
+          </div>
         </div>
+        <div class="w-full md:w-1/2 relative">
+
+          <div class="w-full h-[15.5rem] mt-5 md:absolute md:h-full md:right-0 md:mt-0 md:pl-10">
+            <div class="h-full overflow-clip relative lg:text-lg">
+              <a class="absolute bottom-0 w-full text-center backdrop-blur-3xl border-2 border-slate-400 dark:border-slate-600" href="#">
+                View More
+              </a>
+              <h1 class="font-bold mb-5">Genre:<br>Business, Infrastucure, Culture, Sociopreneur</h1>
+              <p class="text-justify mb-5">In this game, player will establish, develop, and manage their own business starting from zero to success and strive to become a business giant in Java. But the challenge in this game is that apart from managing their own business, player will also become city managers of five major cities in Java while estimating their advantages and disadvantages. There are three types of businesses available to build, they are food & beverages, furniture and petroleum mining businesses.</p>
+              <p class="text-justify font-bold ">Took Part in:</p>
+              <ul class="list-inside list-disc">
+                <li>3D Modeller</li>
+                <li>Level Designer</li>
+                <li>UI / UX</li>
+                <li>Programming and Game Engine</li>
+                <li>Music Programming</li>
+                <li>Animation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="flex flex-wrap md:p-10">
         <div class="w-full md:w-1/2">
-          <h1 class="font-extrabold text-2xl">LOST: The Day I Have To Change</h1>
-          <h1 class="font-bold">Genre: Mystery, Puzzle, Adventure, Sci-Fi</h1>
-          <p class="text-justify">Telling the story of a 10 year old boy named Baskara Raya who is a whiny child. He lost his father since he was 2 years old. In the game, the player will be playing as Baskara Raya (Raya) who tries to solve the mystery of why everyone is missing. Like in the genre, here Raya will be faced with a lot of puzzle that must be solved to get closer to the truth, starting from english riddles, math riddles, simple logic, making potions, and collecting objects. Players will later be accompanied by a mysterious note that can guide the player.</p>
+          <h1 class="font-odibee font-black text-3xl tracking-wide bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">GAME</h1>
+          <h1 class="font-extrabold text-2xl mb-3">LOST: The Day I Have To Change</h1>
+          <div class="md:w-[324px] lg:w-[425px] xl:w-[600px] aspect-video relative slide-container">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/0.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/1.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/2.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/3.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/4.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/5.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/6.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/7.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/8.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/9.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/10.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/11.png" alt="Lost-Pic">
+            <img class="slide-img absolute h-full w-full object-contain rounded-xl" src="/img/lost/12.png" alt="Lost-Pic">
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 relative">
+
+          <div class="w-full h-[15.5rem] mt-5 md:absolute md:h-full md:right-0 md:mt-0 md:pl-10">
+            <div class="h-full overflow-clip relative lg:text-lg">
+              <a class="absolute bottom-0 w-full text-center backdrop-blur-3xl border-2 border-slate-400 dark:border-slate-600" href="#">
+                View More
+              </a>
+              <h1 class="font-bold mb-5">Genre:<br>Mystery, Puzzle, Adventure, Sci-Fi</h1>
+              <p class="text-justify mb-5">Telling the story of a 10 year old boy named Baskara Raya who is a whiny child. He lost his father since he was 2 years old. In the game, the player will be playing as Baskara Raya (Raya) who tries to solve the mystery of why everyone is missing. Like in the genre, here Raya will be faced with a lot of puzzle that must be solved to get closer to the truth, starting from english riddles, math riddles, simple logic, making potions, and collecting objects. Players will later be accompanied by a mysterious note that can guide the player.</p>
+              <p class="text-justify font-bold ">Took Part in:</p>
+              <ul class="list-inside list-disc">
+                <li>3D Modeller</li>
+                <li>Level Designer</li>
+                <li>UI / UX</li>
+                <li>Programming and Game Engine</li>
+                <li>Music Programming</li>
+                <li>Animation</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="p-5">
-        2
-      </div>
-      <div class="p-5">
-        3
-      </div>
-      <div class="p-5">
-        4
-      </div>
-      <div class="p-5">
-        5
-      </div>
-      <div class="p-5">
-        6
-      </div>
-    </div>
+
   </div>
   <!--  -->
   
   <!-- Footer -->
-  <div class="transition-all bg-white dark:bg-slate-900">
+  <div class=" bg-white dark:bg-slate-900">
     <div class="container mx-auto px-5 py-10">
       <div class="inline">
         <br><br>
@@ -143,14 +197,14 @@
   <!--  -->
 
   <!-- Script -->
-	<script src="/js/script.js"></script>
-	<script>
-		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
-	</script>
+  <script src="/js/script.js"></script>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
   <!--  -->
 </body>
 
